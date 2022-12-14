@@ -7,21 +7,26 @@
   <button type="button" (click)="viewMoviesAction()">Acción</button>
 </div>
 
-<div class="searcher">
-  <h5>Ingresa el titulo que quieres buscar: </h5>
-  <input type="text" [(ngModel)]="searchTitle">
-  <button  *ngIf='searchTitle' type="button" (click)="searchTitleMovie()">Buscar</button>
+<div class="searcher_container">
+  <div class="searcherMovie">
+    <h5>Ingresa el titulo que quieres buscar:</h5>
+    <input type="text" [(ngModel)]="searchTitle">
+    <button  *ngIf='searchTitle' type="button" (click)="searchTitleMovie()">Buscar</button>
+  </div>
+
+  <div class="viewSearch" *ngIf='viewSearch'>
+    <img src={{searchMovie.Poster}}>
+    <div class="infoViewSearch">
+      <h2>Titulo: {{searchMovie.Title}}</h2>
+      <h4>Año: {{searchMovie.Year}}</h4>
+      <h4>Duración: {{searchMovie.Runtime}}</h4>
+      <h4>Genero: {{searchMovie.Genre}}</h4>
+      <h4>Director: {{searchMovie.Director}}</h4>
+      <h4>Actores: {{searchMovie.Actors}}</h4>
+    </div>
+  </div>
 </div>
 
-<div class="movieCard" *ngIf='viewSearch'>
-  <img src={{searchMovie.Poster}}>
-  <h3>{{searchMovie.Title}}</h3>
-  <h4>{{searchMovie.Year}}</h4>
-  <h4>{{searchMovie.Runtime}}</h4>
-  <h4>{{searchMovie.Genre}}</h4>
-  <h4>{{searchMovie.Director}}</h4>
-  <h4>{{searchMovie.Actors}}</h4>
-</div>
 
 
 <div class="movieCard_container" *ngIf="viewAll">

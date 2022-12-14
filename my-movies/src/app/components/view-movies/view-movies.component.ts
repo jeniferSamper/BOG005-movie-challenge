@@ -24,6 +24,7 @@ export class ViewMoviesComponent {
   }
 
   GetMovies(typeMovie: string) {
+    this.searchTitle = '';
     this.moviesService
       .getMovies(typeMovie)
       .subscribe((data: Movie) => {

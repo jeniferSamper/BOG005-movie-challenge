@@ -7,7 +7,28 @@
   <button type="button" (click)="viewMoviesAction()">Acción</button>
 </div>
 
-<div class="serieCard_container">
+<div class="searcher_container">
+  <div class="searcherMovie">
+    <h5>Ingresa el titulo que quieres buscar:</h5>
+    <input type="text" [(ngModel)]="searchTitle">
+    <button  *ngIf='searchTitle' type="button" (click)="searchTitleMovie()">Buscar</button>
+  </div>
+
+  <div class="viewSearch" *ngIf='viewSearch'>
+    <img src={{searchSerie.Poster}}>
+    <div class="infoViewSearch">
+      <h2>Titulo: {{searchSerie.Title}}</h2>
+      <h4>Año: {{searchSerie.Year}}</h4>
+      <h4>Duración: {{searchSerie.Runtime}}</h4>
+      <h4>Genero: {{searchSerie.Genre}}</h4>
+      <h4>Director: {{searchSerie.Director}}</h4>
+      <h4>Actores: {{searchSerie.Actors}}</h4>
+    </div>
+  </div>
+</div>
+
+
+<div class="serieCard_container" *ngIf="viewAll">
   <div *ngFor="let serie of series.Search" class="serieCard">
     <img src={{serie.Poster}}>
     <h3>{{serie.Title}}</h3>

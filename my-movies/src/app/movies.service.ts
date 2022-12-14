@@ -26,4 +26,9 @@ export class MoviesService {
       return this.http.get<Movie[]>(`https://www.omdbapi.com/?apikey=8785ee90&type=movie&t=${search}`);
   }
 
+  getTitleSeries(search:string): Observable<any> {
+    // return this.http.get('https://www.omdbapi.com/?i=tt3896198&apikey=8785ee90');
+      return this.http.get<Movie[]>(`https://www.omdbapi.com/?apikey=8785ee90&type=series&t=${search}`);
+  }
+
 }
