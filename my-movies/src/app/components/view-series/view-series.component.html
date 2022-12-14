@@ -1,0 +1,20 @@
+<h3 class="title">Selecciona el genero de series que quieres consultar</h3>
+
+<div class="btns_container">
+  <button type="button" (click)="viewMoviesLove()">Amor</button>
+  <button type="button" (click)="viewMoviesComedy()">Comedia</button>
+  <button type="button" (click)="viewMoviesMystery()">Misterio</button>
+  <button type="button" (click)="viewMoviesAction()">Acción</button>
+</div>
+
+<div class="serieCard_container">
+  <div *ngFor="let serie of series.Search" class="serieCard">
+    <img src={{serie.Poster}}>
+    <h3>{{serie.Title}}</h3>
+    <h4>{{serie.Year}}</h4>
+    <h4>{{serie.Runtime}}</h4>
+    <h4>{{serie.Genre}}</h4>
+    <h4>{{serie.Director}}</h4>
+    <h4>{{serie.Actors}}</h4>
+  </div>
+</div>

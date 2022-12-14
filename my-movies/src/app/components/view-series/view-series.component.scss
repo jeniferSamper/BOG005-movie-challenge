@@ -3,7 +3,7 @@
   text-align: center;
   margin: 2%;
   // text-shadow: 7px 4px 5px red;
-  text-shadow:0.1em 0.1em 0.2em red;
+  text-shadow:0.1em 0.1em 0.2em yellow;
 }
 
 .btns_container{
@@ -12,11 +12,12 @@
 }
 .btns_container button {
   width: 25%;
-  background: #ff00008f;
+  // background: #ff00008f;
     color: white;
+    background: #ffc107d1;
 }
 
-.movieCard_container{
+.serieCard_container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -25,21 +26,19 @@
   padding: 3%;
 }
 
-.movieCard{
-  background-color:  #6c757d70;
+.serieCard{
+  background-color: rgb(90, 86, 86);
   width: 25%;
-  border: solid 3px #ff000075;
-  // width: 35%;
+  border: solid 3px #ffc107d1;
   max-width: 350px;
   max-height: 700px;
   overflow: hidden;
-  color: white;
   text-align: center;
   margin: 20px;
   border-radius: 10px;
-  // cursor: pointer;
 }
 
-.movieCard img {
+.serieCard img {
   height: 70%;
+  max-width: 350px;
 }
