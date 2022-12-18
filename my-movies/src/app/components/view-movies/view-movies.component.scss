@@ -1,0 +1,93 @@
+.title{
+  color: white;
+  text-align: center;
+  margin: 2%;
+  // text-shadow: 7px 4px 5px red;
+  text-shadow:0.1em 0.1em 0.2em red;
+}
+
+.btns_container{
+  display: flex;
+  flex-direction: row;
+}
+.btns_container button {
+  width: 25%;
+  background: #ff00008f;
+    color: white;
+}
+
+.movieCard_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  padding: 3%;
+}
+
+.movieCard{
+  background-color:  #6c757d70;
+  width: 25%;
+  border: solid 3px #ff000075;
+  // width: 35%;
+  max-width: 350px;
+  max-height: 700px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+  // cursor: pointer;
+}
+
+.movieCard img {
+  height: 70%;
+}
+.searcher_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+
+.searcherMovie{
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  gap: 20px;
+}
+
+.searcherMovie button{
+  background-color: #ff000075;
+  border-radius: 10px;
+    color: white;
+    width: 100px;
+}
+
+.viewSearch{
+  display: flex;
+  flex-direction: row;
+  background-color: #212426;
+  border: solid 3px #ff000075;
+  width: 70%;
+  max-width: 1000px;
+  height: 50%;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.viewSearch img {
+  width: 50%;
+}
+
+.infoViewSearch{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
