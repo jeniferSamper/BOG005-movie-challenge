@@ -1,9 +1,15 @@
 
 .home{
-color: white;
+
+  color: white;
+  // text-shadow: 7px 4px 5px red;
+  text-shadow:0.1em 0.1em 0.2em red;
+  display: grid;
+  place-items: center;
+  margin-top: 2%;
 
   img{
-   height: 20vw;
+   height: 120%;
   }
 
 }
