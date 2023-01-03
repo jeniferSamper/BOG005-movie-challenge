@@ -42,6 +42,8 @@
 
 .movieCard img {
   height: 70%;
+  width: 100%;
+
 }
 .searcher_container{
   display: flex;
@@ -90,4 +92,21 @@
   flex-direction: column;
   justify-content: center;
   width: 50%;
+}
+@media only screen and (min-width: 300px) and (max-width: 767px){
+  .movieCard h3 , .movieCard h4 
+  {
+    font-size: 0.7rem;
+  }
+
+  .movieCard {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  .movieCard h3 , .movieCard h4 
+  {
+    font-size: 1.1rem;
+  }
 }
